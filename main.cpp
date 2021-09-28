@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include<adder.hpp>
 #include<GLFW/glfw3.h>
 #include<OLASConfigure.h>
 
@@ -12,6 +11,12 @@ int main(int argc, char* argv[])
 {
     cout<<argv[0]<<" Version "<<OLAS_VERSION_MAJOR<<"."<<OLAS_VERSION_MINOR<<"\n";
     cout<<"Hello World\n";
+
+    #ifdef USE_ADDER
+        cout << add(21.3, 32.6)<<"\n";
+    #else
+        cout<<"21.3 + 32.6\n";
+    #endif
 
     GLFWwindow* window;
 
