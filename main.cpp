@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
-#include<GLFW/glfw3.h>
 #include<OLASConfig.h>
+#include <GL/glew.h>
+#include<GLFW/glfw3.h>
 
 using namespace std;
 
