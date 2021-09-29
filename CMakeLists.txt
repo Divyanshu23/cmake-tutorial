@@ -20,7 +20,7 @@ if(USE_ADDER)
     list(APPEND EXTRA_LINK_LIBS adder)
 endif()
 
-configure_file(OLASConfig.h.in OLASConfigure.h)
+configure_file(OLASConfig.h.in OLASConfig.h)
 
 find_package(Git QUIET)
 if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
@@ -54,3 +54,6 @@ target_link_directories(${PROJECT_NAME}
 )
 
 target_link_libraries(${PROJECT_NAME} ${EXTRA_LINK_LIBS} glfw)
+
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/OLASConfig.h" DESTINATION include)

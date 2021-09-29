@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 #include<GLFW/glfw3.h>
-#include<OLASConfigure.h>
+#include<OLASConfig.h>
 
 using namespace std;
 
